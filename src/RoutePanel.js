@@ -3,7 +3,7 @@ import Home from './Components/Home/Home';
 import Header from './Components/Header/Header';
 import { Routes, Route } from 'react-router-dom';
 import Checkout from './Components/Checkout/Checkout';
-
+import Login from './Components/Login/Login';
 
 
 function NotFound() {
@@ -17,14 +17,13 @@ function NotFound() {
 function RoutePanel() {
     return (
         <div>
-            <div>
-                <Header />
+            <Header />
 
-            </div>
+
             <Routes>
-                <Route path="/" element={<Home />}></Route>
-                <Route path="/" element={<Header />}></Route>
-                <Route path="checkout" element={<Checkout/>}></Route>
+                <Route path="/" element={<Home/>}> </Route>
+                <Route path="/login" element={<Login/>}></Route>
+                <Route path="/checkout" element={<Checkout />}></Route>
                 <Route path="*" element={<NotFound />}></Route>
             </Routes>
         </div>
