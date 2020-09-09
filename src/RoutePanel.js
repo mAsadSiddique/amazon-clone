@@ -3,7 +3,7 @@ import Home from './Components/Home/Home';
 import Header from './Components/Header/Header';
 import { Routes, Route } from 'react-router-dom';
 import Checkout from './Components/Checkout/Checkout';
-import { Link } from 'react-router-dom';
+
 
 
 function NotFound() {

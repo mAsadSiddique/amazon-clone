@@ -13,13 +13,14 @@ function Checkout() {
 
                 <div>
                     <h2 className="checkout__title">
-                       <Subtotal/>
+                    The subtotoal will go there
+                       
                     </h2>
                 </div>
             </div>
 
             <div className="checkout__right">
-                <h2>The subtotoal will go there</h2>
+                <h2><Subtotal/></h2>
             </div>
         </div>
     )

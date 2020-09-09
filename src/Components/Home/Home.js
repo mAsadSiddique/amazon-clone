@@ -7,6 +7,7 @@ function Home() {
         <div className="home">
             <div className="home__container">
                 <img
+                    id="49538094"
                     className="home__image"
                     src="https://images-eu.ssl-images-amazon.com/images/G/02/digital/video/merch2016/Hero/Covid19/Generic/GWBleedingHero_ENG_COVIDUPDATE__XSite_1500x600_PV_en-GB._CB428684220_.jpg"
                     alt="home" />
@@ -14,6 +15,7 @@ function Home() {
 
             <div className="home__row">
                 <Product
+                    id="49538094"
                     title="The Lean Startup: How Constant Innovation Creates Radically Successful Business Paperback"
                     price={29.99}
                     image="https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._SX325_BO1,204,203,200_.jpg"
@@ -30,6 +32,7 @@ function Home() {
 
             <div className="home__row">
                 <Product
+                    id="49538094"
                     title="Sumsung LC49RG90SSUXEN 49' Curved LED Gaming Monitor"
                     price={199.99}
                     image="https://images-na.ssl-images-amazon.com/images/I/71Swqqe7XAL._AC_SX566_.jpg"
@@ -42,6 +45,7 @@ function Home() {
                     rating={4}
                 />
                 <Product
+                    id="49538094"
                     title="Sumsung LC49RG90SSUXEN 49' Curved LED Gaming Monitor"
                     price={29.99}
                     image="https://images-na.ssl-images-amazon.com/images/I/51mDUtXlJzL.jpg"
@@ -50,7 +54,8 @@ function Home() {
             </div>
 
             <div className="home__row">
-            <Product
+                <Product
+                    id="49538094"
                     title="Sumsung LC49RG90SSUXEN 49' Curved LED Gaming Monitor"
                     price={199.99}
                     image="https://images-na.ssl-images-amazon.com/images/I/71Swqqe7XAL._AC_SX566_.jpg"
