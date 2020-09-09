@@ -18,9 +18,7 @@ function RoutePanel() {
     return (
         <div>
             <div>
-                {/* <Link to="/">Home</Link> */}
                 <Header />
-                {/* <Checkout/> */}
 
             </div>
             <Routes>
