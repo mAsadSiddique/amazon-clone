@@ -1,7 +1,7 @@
 import React from 'react';
 import Home from './Components/Home/Home';
 import Header from './Components/Header/Header';
-import { Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Checkout from './Components/Checkout/Checkout';
 import Login from './Components/Login/Login';
 
@@ -17,15 +17,27 @@ function NotFound() {
 function RoutePanel() {
     return (
         <div>
-            <Header />
 
 
-            <Routes>
-                <Route path="/" element={<Home/>}> </Route>
-                <Route path="/login" element={<Login/>}></Route>
-                <Route path="/checkout" element={<Checkout />}></Route>
-                <Route path="*" element={<NotFound />}></Route>
-            </Routes>
+
+            <Router>
+                <Switch>
+                    <Route path="/login" ><Login /></Route>
+                    <Route path="/checkout" >
+                        <Header />
+                        <Checkout/>
+                    </Route>
+
+                    <Route path="/" >
+                        <Header />
+                        <Home />
+
+                    </Route>
+
+
+                    <Route path="*" > <NotFound /></Route>
+                </Switch>
+            </Router>
         </div>
     )
 }
