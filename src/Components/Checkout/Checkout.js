@@ -5,7 +5,8 @@ import { useStateValue } from '../StateProvider';
 import CheckoutProduct from '../CheckoutProduct/CheckoutProduct';
 
 function Checkout() {
-    const [{ basket }, dispatch] = useStateValue();
+    const [{ basket, user }, dispatch] = useStateValue();
+    console.log(user?.email);
     return (
         <div className="checkout">
             <div className="checkout__left">
@@ -15,6 +16,7 @@ function Checkout() {
                 />
 
                 <div>
+    <h4>hello {user?.email}</h4>
                     <h2 className="checkout__title">
                         The subtotoal will go there
                     </h2>
