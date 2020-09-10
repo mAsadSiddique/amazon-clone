@@ -1,11 +1,12 @@
 .checkoutProduct{
+    display: flex;
+    flex-flow: row;
     padding: 10px;
     width: 80%;
     display: flex;
     margin-top: 20px;
     margin-bottom: 20px;
-    border: 2px solid black;
-
+border-bottom: 1px solid darkgrey;
 }
 
 .checkoutProduct__info{
