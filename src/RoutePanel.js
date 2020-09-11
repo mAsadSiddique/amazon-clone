@@ -9,7 +9,7 @@ import { useStateValue } from './Components/StateProvider';
 import Payment from './Components/Payment/Payment';
 import { loadStripe } from '@stripe/stripe-js';
 import { Elements } from '@stripe/react-stripe-js';
-
+import Orders from './Components/Orders/Orders';
 
 
 function NotFound() {
@@ -29,7 +29,7 @@ function RoutePanel() {
     useEffect(() => {
         // will only run once when the components loads...
         auth.onAuthStateChanged(authUser => {
-            console.log('The User is >>> ', authUser);
+            // console.log('The User is >>> ', authUser);
             if (authUser) {
                 // the user just logged in / the user was logged in
                 dispatch({
@@ -54,6 +54,9 @@ function RoutePanel() {
 
             <Router>
                 <Switch>
+                    <Route path="/orders" >
+                        <Orders />
+                    </Route>
                     <Route path="/login" ><Login /></Route>
                     <Route path="/checkout" >
                         <Header />
@@ -69,11 +72,13 @@ function RoutePanel() {
                     <Route path="/" >
                         <Header />
                         <Home />
-
                     </Route>
 
+                    <Route path="*" >
+                        <Header />
+                        <NotFound />
+                    </Route>
 
-                    <Route path="*" > <NotFound /></Route>
                 </Switch>
             </Router>
         </div>

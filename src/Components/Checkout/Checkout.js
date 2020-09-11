@@ -26,7 +26,7 @@ function Checkout() {
                         Basket items list
                     </h2>
                     <div >
-                        <FlipMove className="flip-wrapper" style={{ color: 'red' }} >
+                        {/* <FlipMove className="flip-wrapper" style={{ color: 'red' }} > */}
                             {
                                 basket.map(item => (
                                     <CheckoutProduct
@@ -38,7 +38,7 @@ function Checkout() {
                                     />
                                 ))
                             }
-                        </FlipMove>
+                        {/* </FlipMove> */}
                     </div>
                 </div>
             </div>
