@@ -3,7 +3,7 @@ import './Checkout.css';
 import Subtotal from '../SubTotoal/Subtotal';
 import { useStateValue } from '../StateProvider';
 import CheckoutProduct from '../CheckoutProduct/CheckoutProduct';
-import FlipMove from 'react-flip-move';
+// import FlipMove from 'react-flip-move';
 import { Helmet } from 'react-helmet';
 
 function Checkout() {
