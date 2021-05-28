@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './Orders.css';
 import { useStateValue } from '../StateProvider';
 import { db } from '../../firebase';
-import Orders_1 from './Orders_1';
+import Orders1 from './Orders1';
 
 function Orders() {
     const [{  user }] = useStateValue();
@@ -34,7 +34,7 @@ function Orders() {
             <div className="orders__order">
                 {
                     orders?.map(order => (
-                        <Orders_1
+                        <Orders1
                             order={order}
                         />
                     ))
