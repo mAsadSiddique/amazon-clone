@@ -24,7 +24,7 @@ function NotFound() {
 const promise = loadStripe("pk_test_51HPwxaLozDy7Ej3Rh2dMVLKquYMoW7cB5AEApDduQJXMhe55JHpek8ObqiBKIFb6RA7vF5eKuSUSpA6HLoWpEedr009S5gfs5N");
 
 function RoutePanel() {
-    const [{ }, dispatch] = useStateValue();
+    const [ dispatch] = useStateValue();
 
     useEffect(() => {
         // will only run once when the components loads...

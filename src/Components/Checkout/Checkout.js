@@ -7,7 +7,7 @@ import CheckoutProduct from '../CheckoutProduct/CheckoutProduct';
 import { Helmet } from 'react-helmet';
 
 function Checkout() {
-    const [{ basket, user }, dispatch] = useStateValue();
+    const [{ basket, user }] = useStateValue();
     console.log(user?.email);
     return (
         <div className="checkout">

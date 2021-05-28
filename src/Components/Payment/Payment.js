@@ -75,6 +75,8 @@ function Payment() {
             history.replace('/orders')
         })
 
+        payload()
+
     }
 
     const handleChange = event => {

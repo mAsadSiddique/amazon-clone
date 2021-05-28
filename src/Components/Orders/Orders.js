@@ -5,7 +5,7 @@ import { db } from '../../firebase';
 import Orders_1 from './Orders_1';
 
 function Orders() {
-    const [{ basket, user }, dispatch] = useStateValue();
+    const [{  user }] = useStateValue();
     const [orders, setOrders] = useState([]);
 
 
